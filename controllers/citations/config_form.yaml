@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Citation
+
+# Model Form Field configuration
+form: $/pensoft/citationtool/models/citation/fields.yaml
+
+# Model Class name
+modelClass: Pensoft\CitationTool\Models\Citation
+
+# Default redirect location
+defaultRedirect: pensoft/citationtool/citations
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: pensoft/citationtool/citations/update/:id
+    redirectClose: pensoft/citationtool/citations
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: pensoft/citationtool/citations
+    redirectClose: pensoft/citationtool/citations
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

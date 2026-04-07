@@ -1,0 +1,9 @@
+1.0.1: 'First version of CitationTool'
+1.0.2:
+    - 'Created table pensoft_citationtool_citations'
+    - builder_table_create_pensoft_citationtool_citations.php
+1.0.3:
+    - 'Frontend form'
+
+4.0.1:
+    - 'Migrated to OctoberCMS 4 and PHP 8.2'

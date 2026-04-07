@@ -1,0 +1,123 @@
+<form method="post" data-request="{{__SELF__}}::onSubmit" data-request-files data-request-flash  enctype="multipart/form-data">
+    <input type="hidden" name="_handler" value="onSubmit">
+    {{ form_token() }}
+    {{ form_sessionKey() }}
+    <div class="row ui form" id="citations">
+        <div class="col-xs">
+            <div class="row">
+                <div class="col-xs">
+                    <div class="formErrors"></div>
+                </div>
+            </div>
+
+            <div class="row box">
+                <div class="col-xs">
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Title <span class="required">*</span></div>
+                            <div class="field">
+                                <input type="text" name="title" value="" class="DPText" size="2" aria-label="Title">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Authors  <small class="grey">(comma separated)</small><span class="required">*</span></div>
+                            <div class="field">
+                                <input type="text" name="authors" value="" class="DPText" size="2" aria-label="Authors">
+                            </div>
+                        </div>
+
+                        <div class="col-xs">
+                            <div class="inputLabel">Year <span class="required">*</span></div>
+                            <div class="field">
+
+                                <input type="text" name="year" value="" class="DPText" size="2" aria-label="Year">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Journal title</div>
+                            <div class="field">
+
+                                <input type="text" name="journal_title" value="" class="DPText" size="2" aria-label="Journal title">
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs">
+                            <div class="inputLabel">Publisher</div>
+                            <div class="field">
+                                <input type="text" name="publisher" value="" class="DPText" size="2" aria-label="Publisher">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Place</div>
+                            <div class="field">
+
+                                <input type="text" name="place" value="" class="DPText" size="2" aria-label="Place">
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs">
+                            <div class="inputLabel">Volume issue</div>
+                            <div class="field">
+                                <input type="text" name="volume_issue" value="" class="DPText" size="2" aria-label="Volume/Issue">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Page range</div>
+                            <div class="field">
+
+                                <input type="text" name="pages" value="" class="DPText" size="2" aria-label="Pages">
+
+                            </div>
+                        </div>
+                        <div class="col-xs">
+                            <div class="inputLabel">DOI/URL <small class="grey">(incl. http:// or https://)</small></div>
+                            <div class="field">
+                                <input type="text" name="doi" value="" class="DPText" size="2" aria-label="DOI">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs">
+                            <div class="inputLabel">Attachment</div>
+                            <div class="field">
+
+                                <input type="file" name="attachment" value="" placeholder="Upload files" accept="image/*, .pdf, .doc, .docx, .ppt, .xls, xlsx, .txt" data-request="{{__SELF__}}::onFileUpload" data-request-files data-request-flash aria-label="Upload file">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs" id="attachmentPreview"></div>
+                    </div>
+
+                    <div class="row center-xs">
+                        <div class="col-xs-12 col-sm-3">
+
+                            <input type="submit" name="tAction" value="Submit" class="btn btn-primary">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+{% framework extras %}
+{% scripts %}

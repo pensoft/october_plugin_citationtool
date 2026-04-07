@@ -1,0 +1,51 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    authors:
+        label: authors
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: year
+        type: text
+        searchable: true
+        sortable: true
+    journal_title:
+        label: journal_title
+        type: text
+        searchable: true
+        sortable: true
+    publisher:
+        label: publisher
+        type: text
+        searchable: true
+        sortable: true
+    pages:
+        label: pages
+        type: text
+        searchable: true
+        sortable: true
+    volume_issue:
+        label: volume_issue
+        type: text
+        searchable: true
+        sortable: true
+    doi:
+        label: doi
+        type: text
+        searchable: true
+        sortable: true
+    place:
+        label: place
+        type: text
+        searchable: true
+        sortable: true

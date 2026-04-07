@@ -1,0 +1,65 @@
+fields:
+    authors:
+        label: Authors
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        span: auto
+        required: 1
+        type: taglist
+        comment: 'comma separated'
+    year:
+        label: Year
+        mode: date
+        format: 'Y'
+        span: auto
+        required: 1
+        type: datepicker
+    title:
+        label: Title
+        span: full
+        required: 1
+        type: text
+    journal_title:
+        label: 'Journal title'
+        span: auto
+        type: text
+    publisher:
+        label: Publisher
+        span: auto
+        type: text
+    place:
+        label: Place
+        span: auto
+        type: text
+    volume_issue:
+        label: 'Volume issue'
+        span: auto
+        type: text
+    pages:
+        label: Pages
+        span: auto
+        type: text
+    doi:
+        label: Doi/Link
+        span: auto
+        type: text
+    file_upload:
+        label: 'File attachment'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    file_preview:
+        label: 'File preview'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

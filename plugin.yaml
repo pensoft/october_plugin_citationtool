@@ -1,0 +1,11 @@
+plugin:
+    name: 'pensoft.citationtool::lang.plugin.name'
+    description: 'pensoft.citationtool::lang.plugin.description'
+    author: Pensoft
+    icon: icon-leaf
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Citation tool'
+        url: pensoft/citationtool/citations
+        icon: icon-align-justify
